@@ -1,0 +1,431 @@
+/* ================================
+   Reset & Base
+   ================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Serif Pro', Georgia, serif;
+    color: #1a1a2e;
+    background: #fff;
+    line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+/* ================================
+   Navbar
+   ================================ */
+.navbar-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.nav-left .content {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-center {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 15px;
+}
+
+.nav-center a:hover,
+.nav-right a:hover { color: blue; }
+
+.btn-primary {
+    background-color: blueviolet;
+    color: #fff !important;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover { background-color: rgb(226, 43, 202); }
+
+/* ================================
+   Hero
+   ================================ */
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-heading {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 6px 16px;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.hero-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-minor {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 28px;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #764ba2;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-button:hover { background: #5a3580; }
+
+/* ================================
+   Stats / Fun Fact
+   ================================ */
+.fun-fact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #F7F0FF;
+    border-radius: 16px;
+}
+
+.fact-box {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.footer-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.stat img { width: 40px; height: 40px; }
+
+/* ================================
+   Our Story
+   ================================ */
+.story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    align-items: center;
+}
+
+.story-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #0a0a3a;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.story-text .lead { font-weight: 700; margin-bottom: 1.25rem; }
+.story-text .lead .accent { color: #6c4ad6; }
+.story-text p { margin-bottom: 1rem; max-width: 360px; }
+
+.story-image img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+/* ================================
+   Divider
+   ================================ */
+.divider {
+    border-top: 1px solid #e5e5ec;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ================================
+   Features (What Sets Us Apart)
+   ================================ */
+.features { padding: 4rem 2rem; text-align: center; }
+
+.features h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #0a0a3a;
+    margin-bottom: 3rem;
+}
+
+.carousel { position: relative; max-width: 720px; margin: 0 auto; }
+
+.card {
+    background: #f1edfb;
+    border-radius: 14px;
+    padding: 2.5rem 3rem;
+    text-align: center;
+}
+
+.card .icon { font-size: 2rem; margin-bottom: 1rem; }
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #0a0a3a;
+    margin-bottom: 1rem;
+}
+.card p { color: #2a2a3a; max-width: 520px; margin: 0 auto; }
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #d4d4dc;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.arrow.prev { left: -60px; }
+.arrow.next { right: -60px; }
+
+/* ================================
+   Community
+   ================================ */
+.community {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.com-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background: #F7F0FF;
+    border-radius: 20px;
+    padding: 3rem;
+    align-items: center;
+}
+
+.com-state h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #0a0a3a;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.com-state p { margin-bottom: 1rem; }
+
+.img-de {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+}
+
+/* ================================
+   Growth image
+   ================================ */
+.growth {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    background: #F7F0FF;
+}
+
+.growth-img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    background: #F7F0FF;
+    display: block;
+}
+
+/* ================================
+   Mentors
+   ================================ */
+.our-mentors {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.our-ment {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.our-ment h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #0a0a3a;
+    margin-bottom: 1rem;
+}
+
+.our-ment h4 {
+    font-weight: normal;
+    color: #555;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.team-member {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 14px;
+    background: #fafafa;
+}
+
+.mentor-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.mentor-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #0a0a3a;
+    margin-bottom: 0.25rem;
+}
+
+.mentor-role {
+    color: #6c4ad6;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
+
+.mentor-bio {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-icons img { width: 20px; height: 20px; }
+
+/* ================================
+   Footer
+   ================================ */
+.footer-last {
+    background: #0a0a3a;
+    color: #fff;
+    padding: 4rem 2rem;
+    margin-top: 4rem;
+}
+
+.footer-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.ft-brand .log1 {
+    width: 140px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.ft-brand p { color: #cfcfe0; max-width: 320px; }
+
+.ft-col h4 {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.ft-col ul li { margin-bottom: 0.5rem; }
+
+.ft-col a { color: #cfcfe0; }
+.ft-col a:hover { color: #fff; }
+
+/* ================================
+   Responsive
+   ================================ */
+@media (max-width: 900px) {
+    .navbar { flex-wrap: wrap; height: auto; padding: 12px; }
+    .nav-center { order: 3; width: 100%; justify-content: center; flex-wrap: wrap; }
+
+    .hero-text { font-size: 28px; }
+    .footer-bar { justify-content: center; }
+
+    .story,
+    .com-wrapper { grid-template-columns: 1fr; gap: 2rem; }
+
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+
+    .arrow.prev { left: 8px; }
+    .arrow.next { right: 8px; }
+}
+
+@media (max-width: 500px) {
+    .team-grid,
+    .footer-grid { grid-template-columns: 1fr; }
+}
